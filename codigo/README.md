@@ -1,6 +1,6 @@
 # Código do Projeto
 
-CLASSE ALUGUEL
+**CLASSE ALUGUEL**
 
 package aluguelDeEquipamentos;
 
@@ -62,7 +62,7 @@ public class Aluguel {
     }
 }
 
-CLASSE EQUIPAMENTOS
+**CLASSE EQUIPAMENTOS**
 
 package aluguelDeEquipamentos;
 
@@ -96,7 +96,7 @@ public class Equipamento {
     }
 }
 
-CLASSE CLIENTE
+**CLASSE CLIENTE**
 
 public class Cliente {
     private String nome;
