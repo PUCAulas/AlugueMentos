@@ -21,6 +21,6 @@ public class AluguelTest {
         double resultadoEsperado = 700.0;
         double resultadoCalculado = aluguel.calcularValorTotal();
 
-        assertEquals(resultadoEsperado, resultadoCalculado, 0.001); // Usamos delta para lidar com a precisão de ponto flutuante
+        assertEquals(resultadoEsperado, resultadoCalculado);
     }
 }
