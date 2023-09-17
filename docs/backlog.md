@@ -17,7 +17,15 @@ Atualizado em 17/09/2023
 ## Backlog
 
 | Id      | Como um (a) | Quero ser capaz de | Para que... | Prioridade | Status |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+|Status | Status | Status | Status | Status | Status |
+----
 | 1. Catar frutas no bosque      | Soneca ➕➖     |
 | 2. Arrumar as camas   | Soneca  ❌    |
 | 3. Consertar a cerca | Zangado  ➕➖ | 
