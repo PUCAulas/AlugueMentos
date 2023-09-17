@@ -22,4 +22,4 @@ Atualizado em 17/09/2023
 |4 | Administrador | Listar todos os equipamentos disponíveis | os clientes possam escolher o que desejam alugar | Alta | Concluído |
 |5 | Administrador | Gerenciar aluguéis existentes | possamos rastrear o status de cada aluguel | Alta | Concluído |
 |6 | Administrador | Gerar relatórios sobre a atividade do sistema | ajudar na tomada de decisões e no planejamento | Alta | Concluído |
-|7 | Administrador | Calcular e mostrar o valor total do aluguel | os administradores e clientes tenham visibilidade do custo total de um aluguel | Alta | Concluído |
+|7 | Administrador | Calcular o valor total do aluguel | os administradores e clientes tenham visibilidade do custo total de um aluguel | Alta | Concluído |
