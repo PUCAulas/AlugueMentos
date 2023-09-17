@@ -5,13 +5,11 @@ Atualizado em 17/09/2023
 
 | Tarefa      | Responsável |
 | ----------- | ----------- |
-| 1. Implementar cadastro de clientes      | Matheus  ✔️     |
+| 1. Implementar cadastro de clientes      | Beatriz  ✔️     |
 | 2. Implementar cadastro de equipamentos   | Joaquim ✔️       |
 | 3. Implementar gerenciamento de aluguéis   | Maria Eduarda ✔️       |
-| 4. Implementar relatório dos aluguéis   | Beatriz ✔️       |
-| 5. Realização de teste   | Todos ✔️       |
-| 6. Criar diagrama de classes   | Vitória ✔️       |
-| 7. Atualizar diagrama de classes   | Todos  ✔️      |
+| 4. Realização de testes   | Matheus ✔️       |
+| 5. Criar diagrama de classes   | Vitória ✔️       |
 ----
 
 ## Backlog
