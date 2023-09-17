@@ -1,26 +1,20 @@
-package aluguelDeEquipamentos;
-
-
-import java.util.Date;
-import org.junit.jupiter.api.Test;
+package test.java;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import main.java.Aluguel;
+import main.java.Equipamento;
 
 public class AluguelTest {
-
-    @Test
-    public void testCalcularValorTotal() {
-        Equipamento equipamento = new Equipamento("E001", "Escavadeira");
-        Date dataInicio = new Date();
-        Date dataTermino = new Date(dataInicio.getTime() + 7 * 24 * 60 * 60 * 1000); // Data de término após 7 dias
-        double valorDiario = 100.0;
-
-        Aluguel aluguel = new Aluguel("ClienteA", equipamento, dataInicio, dataTermino, valorDiario);
-
-        // O valor total deve ser 7 dias * 100.0 reais por dia = 700.0 reais
-        double resultadoEsperado = 700.0;
-        double resultadoCalculado = aluguel.calcularValorTotal();
-
-        assertEquals(resultadoEsperado, resultadoCalculado);
-    }
+	
+	@Test
+	void testCalcularValorTotalComEquipamento() {
+	    Equipamento equipamento = new Equipamento("002", "Furadeira", 100.0);
+	    //data de início = 1/9/2023 e data de término = 10/9/2023
+	    Aluguel aluguel = new Aluguel(null, equipamento, 1, 9, 2023, 10, 9, 2023, 0.0);
+	    
+	    //9 dias * 100.0 (valor do equipamento) = 900.0
+	    assertEquals(900.0, aluguel.calcularValorTotal());
+	}
 }
