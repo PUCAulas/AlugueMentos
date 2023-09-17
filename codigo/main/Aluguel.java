@@ -1,55 +1,91 @@
-package aluguelDeEquipamentos;
+package main.java;
 
-import java.util.Date;
-
-public class Aluguel { 
-    private String cliente; private Equipamento equipamento; private Date dataInicio; private Date dataTermino; private double valorDiario;
-
-    public Aluguel(String cliente, Equipamento equipamento, Date dataInicio, Date dataTermino, double valorDiario) {
-        this.cliente = cliente;
-        this.equipamento = equipamento;
-        this.dataInicio = dataInicio;
-        this.dataTermino = dataTermino;
+public class Aluguel {
+	private Cliente cliente;
+    private Equipamento equipamento;
+    private int diaInicio;
+    private int mesInicio;
+    private int anoInicio;
+    private int diaTermino;
+    private int mesTermino;
+    private int anoTermino;
+    private double valorDiario;
+    
+    public Aluguel(Cliente cliente, Equipamento equipamento, int diaInicio, int mesInicio, int anoInicio, int diaTermino, int mesTermino, int anoTermino, double valorDiario) {
+    	this.cliente = cliente;
+    	this.equipamento = equipamento;
+        this.diaInicio = diaInicio;
+        this.mesInicio = mesInicio;
+        this.anoInicio = anoInicio;
+        this.diaTermino = diaTermino;
+        this.mesTermino = mesTermino;
+        this.anoTermino = anoTermino;
         this.valorDiario = valorDiario;
     }
-
+    
     public double calcularValorTotal() {
-        long diferenca = dataTermino.getTime() - dataInicio.getTime();
-        //converte para dias
-        int numDias = (int) (diferenca / (24 * 60 * 60 * 1000)); //horas, minutos, segundos, milissegundos
-        return numDias * valorDiario;
+        
+        int numDias = calcularDiferencaDias();
+
+        if (equipamento != null && equipamento.getValorEquipamento() > 0) {
+            return numDias * equipamento.getValorEquipamento();
+        } else {
+            return numDias * valorDiario;
+        }
     }
     
-    public String getCliente() {
-        return cliente;
+    private int calcularDiferencaDias() {
+        int totalDiasInicio = anoInicio * 365 + mesInicio * 30 + diaInicio;
+        int totalDiasTermino = anoTermino * 365 + mesTermino * 30 + diaTermino;
+        return totalDiasTermino - totalDiasInicio;
+    }
+    
+    public int getDiaInicio() {
+        return diaInicio;
     }
 
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
+    public void setDiaInicio(int diaInicio) {
+        this.diaInicio = diaInicio;
     }
 
-    public Equipamento getEquipamento() {
-        return equipamento;
+    public int getMesInicio() {
+        return mesInicio;
     }
 
-    public void setEquipamento(Equipamento equipamento) {
-        this.equipamento = equipamento;
+    public void setMesInicio(int mesInicio) {
+        this.mesInicio = mesInicio;
     }
 
-    public Date getDataInicio() {
-        return dataInicio;
+    public int getAnoInicio() {
+        return anoInicio;
     }
 
-    public void setDataInicio(Date dataInicio) {
-        this.dataInicio = dataInicio;
+    public void setAnoInicio(int anoInicio) {
+        this.anoInicio = anoInicio;
     }
 
-    public Date getDataTermino() {
-        return dataTermino;
+    public int getDiaTermino() {
+        return diaTermino;
     }
 
-    public void setDataTermino(Date dataTermino) {
-        this.dataTermino = dataTermino;
+    public void setDiaTermino(int diaTermino) {
+        this.diaTermino = diaTermino;
+    }
+
+    public int getMesTermino() {
+        return mesTermino;
+    }
+
+    public void setMesTermino(int mesTermino) {
+        this.mesTermino = mesTermino;
+    }
+
+    public int getAnoTermino() {
+        return anoTermino;
+    }
+
+    public void setAnoTermino(int anoTermino) {
+        this.anoTermino = anoTermino;
     }
 
     public double getValorDiario() {
@@ -59,4 +95,4 @@ public class Aluguel {
     public void setValorDiario(double valorDiario) {
         this.valorDiario = valorDiario;
     }
-    }
+}
