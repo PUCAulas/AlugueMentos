@@ -1,0 +1,40 @@
+package main.java;
+
+public class Equipamento {
+	package main.java;
+
+	public class Equipamento {
+		private String codigo;
+		private String descricao;
+		private double valorEquipamento;
+		
+		public Equipamento(String codigo, String descricao, double valorEquipamento) {
+			this.codigo = codigo;
+			this.descricao = descricao;
+			this.valorEquipamento = valorEquipamento;
+		}
+		
+		public String getCodigo() {
+			return codigo;
+		}
+		
+		public void setCodigo (String codigo) {
+			this.codigo = codigo;
+		}
+		
+		public String getDescricao() {
+			return descricao;
+		}
+		
+		public void setDescricao (String descricao) {
+			this.descricao = descricao;
+		}
+		
+		public double getValorEquipamento() {
+	        return valorEquipamento;
+	    }
+
+	    public void setValorEquipamento(double valorEquipamento) {
+	        this.valorEquipamento = valorEquipamento;
+	    }
+}
